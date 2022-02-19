@@ -9,3 +9,4 @@
     - include: tasks/zsh.yml
     - include: tasks/nvim.yml
     - include: tasks/dotfiles.yml
+    - include: tasks/clean.yml

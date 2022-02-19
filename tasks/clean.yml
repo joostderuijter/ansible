@@ -1,0 +1,4 @@
+- name: Clean vault pass file
+  shell: rm {{ playbook_dir }}/pass
+  tags:
+    - clean
