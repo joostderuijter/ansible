@@ -7,4 +7,4 @@ sudo apt-get update
 sudo apt-get install ansible curl git software-properties-common sudo ansible -y 
 
 ## pull ansible
-sudo ansible-pull --vault-pass-file=pass --ask-become-pass --ask-become-pass -U https://github.com/joostderuijter/ansible/tree/debian-10
+sudo ansible-pull --vault-password-file=pass --ask-become-pass -U https://github.com/joostderuijter/ansible --checkout debian-10
