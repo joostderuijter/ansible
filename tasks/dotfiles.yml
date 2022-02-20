@@ -1,4 +1,5 @@
 - name: Install stow
+  become: true
   apt: name=stow
   tags:
     - dotfiles
@@ -11,6 +12,11 @@
     update: yes
     accept_hostkey: yes
     version: master
+  tags:
+    - dotfiles
+    - stow
+- name: Remove default .zshrc
+  shell: rm ~/.zshrc
   tags:
     - dotfiles
     - stow
