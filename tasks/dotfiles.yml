@@ -16,7 +16,9 @@
     - dotfiles
     - stow
 - name: Remove default .zshrc
-  shell: rm ~/.zshrc
+  file:
+    path: "{{ lookup('env', 'HOME') }}/.zshrc"
+    state: absent
   tags:
     - dotfiles
     - stow
